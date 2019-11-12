@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.292 sec <<< FAILURE!
+restAssured(RestAssured.RestAssuredTest)  Time elapsed: 0.359 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at io.restassured.config.ObjectMapperConfig.<init>(ObjectMapperConfig.java:49)
+	at io.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:420)
+	at RestAssured.RestAssuredTest.restAssured(RestAssuredTest.java:19)
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 39 more
+
+restAssured_String(RestAssured.RestAssuredTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+	at RestAssured.RestAssuredTest.restAssured_String(RestAssuredTest.java:28)
+
